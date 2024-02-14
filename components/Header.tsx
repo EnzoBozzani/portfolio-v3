@@ -1,39 +1,49 @@
+'use client';
+
 import { CodeIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 
 import { Button } from './ui/button';
+import { MobileSidebar } from './MobileSidebar';
+import { useLanguage } from '@/hooks/useLanguage';
 
 export const Header = () => {
+	const language = useLanguage((state) => state.language);
+	const onLanguageChange = useLanguage((state) => state.onLanguageChange);
+
 	return (
-		<header className='w-full p-6 flex items-center justify-between'>
+		<header className='fixed top-0 w-full p-4 flex items-center justify-between z-40 backdrop-blur'>
 			<Link
 				className='flex items-center group'
 				href='/'
 			>
-				<CodeIcon className='w-12 h-12 text-green-500 mr-2' />
-				<p className='group-hover:text-white/70 text-2xl text-white'>Enzo Bozzani</p>
+				<CodeIcon className='h-8 w-8 md:w-12 md:h-12 text-green-500 mr-2' />
+				<p className='group-hover:text-white/70 text-lg md:text-2xl text-white'>Enzo Bozzani</p>
 			</Link>
-			<div className='space-x-6 hidden md:block'>
+			<div className='space-x-6 hidden sm:block'>
 				<Link
 					href='/experience'
 					className='text-lg text-white border-b-2 border-transparent pb-2 transition duration-200 hover:border-b-green-500 hover:text-white/70'
 				>
-					Experience
+					{language === 'pt' ? 'Experiência' : 'Experience'}
 				</Link>
 				<Link
 					href='/projects'
 					className='text-lg text-white border-b-2 border-transparent pb-2 transition duration-200 hover:border-b-green-500 hover:text-white/70'
 				>
-					Projects
+					{language === 'pt' ? 'Projetos' : 'Projects'}
 				</Link>
 				<Link
 					href='/contact'
 					className='text-lg text-white border-b-2 border-transparent pb-2 transition duration-200 hover:border-b-green-500 hover:text-white/70'
 				>
-					Contact
+					{language === 'pt' ? 'Contato' : 'Contact'}
 				</Link>
-				<Button variant='custom'>
-					<p className='mr-2'>Language</p>
+				<Button
+					variant='custom'
+					onClick={() => onLanguageChange(language)}
+				>
+					<p className='mr-2'>{language === 'pt' ? 'EN 🇺🇸' : 'PT 🇧🇷'}</p>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
@@ -50,6 +60,7 @@ export const Header = () => {
 					</svg>
 				</Button>
 			</div>
+			<MobileSidebar />
 		</header>
 	);
 };
