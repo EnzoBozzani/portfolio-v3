@@ -14,13 +14,13 @@ export const Header = () => {
 	return (
 		<header className='fixed top-0 w-full p-4 flex items-center justify-between z-40 backdrop-blur'>
 			<Link
-				className='flex items-center group'
+				className='mx-auto md:mx-0 flex items-center group'
 				href='/'
 			>
 				<CodeIcon className='h-8 w-8 md:w-12 md:h-12 text-green-500 mr-2' />
 				<p className='group-hover:text-white/70 text-lg md:text-2xl text-white'>Enzo Bozzani</p>
 			</Link>
-			<div className='space-x-6 hidden sm:block'>
+			<div className='space-x-6 hidden md:block'>
 				<Link
 					href='/experience'
 					className='text-lg text-white border-b-2 border-transparent pb-2 transition duration-200 hover:border-b-green-500 hover:text-white/70'
