@@ -1,5 +1,11 @@
+import { TitleSection } from '@/components/TitleSection';
+
 const Home = () => {
-	return <div></div>;
+	return (
+		<main className='h-full w-full'>
+			<TitleSection />
+		</main>
+	);
 };
 
 export default Home;

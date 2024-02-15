@@ -34,14 +34,12 @@ export const MobileSidebar = () => {
 
 	return (
 		<>
-			<Button
+			<button
 				onClick={onOpen}
-				className='block md:hidden absolute left-4 top-4'
-				variant='custom'
-				size={'sm'}
+				className='block md:hidden absolute left-4 top-4 p-1'
 			>
-				<HamburgerMenuIcon className='w-4 h-4 text-white' />
-			</Button>
+				<HamburgerMenuIcon className='w-6 h-6 text-white' />
+			</button>
 			<Sheet
 				open={isOpen}
 				onOpenChange={onClose}
@@ -51,7 +49,7 @@ export const MobileSidebar = () => {
 					className='p-2 pt-10 bg-gradient-to-b from-neutral-900 to-neutral-800 border-none text-white'
 				>
 					<div className='flex flex-col items-center justify-between gap-y-20'>
-						<div className='mx-auto'>
+						<div>
 							<Link
 								className='flex items-center group'
 								href='/'
@@ -100,20 +98,20 @@ export const MobileSidebar = () => {
 								</svg>
 							</Button>
 						</div>
-						<footer className='fixed bottom-0 py-6 flex items-center justify-center gap-x-8 w-3/4 sm:w-[385px] border-t border-t-white/30'>
+						<footer className='fixed bottom-0 py-6 flex items-center justify-center gap-x-6 w-3/4 sm:w-[385px] border-t border-t-white/30'>
 							<a
-								href=''
+								href='https://github.com/EnzoBozzani'
 								target='_blank'
 								className='hover:text-white text-white/30'
 							>
-								<GitHubLogoIcon className='w-8 h-8' />
+								<GitHubLogoIcon className='w-10 h-10' />
 							</a>
 							<a
-								href=''
+								href='https://www.linkedin.com/in/enzo-bozzani-812a7322a/'
 								target='_blank'
 								className='hover:text-white text-white/30'
 							>
-								<LinkedInLogoIcon className='w-8 h-8' />
+								<LinkedInLogoIcon className='w-10 h-10' />
 							</a>
 						</footer>
 					</div>

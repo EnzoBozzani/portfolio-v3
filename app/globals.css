@@ -8,6 +8,20 @@ body,
 	height: 100%;
 }
 
+.pulseAnimation {
+	animation: pulseEffect 1.5s infinite alternate ease;
+}
+
+@keyframes pulseEffect {
+	0% {
+		box-shadow: 0 0 5px transparent;
+	}
+
+	100% {
+		box-shadow: 0 0 30px 5px #22c55e;
+	}
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
