@@ -6,7 +6,7 @@ type LanguageStore = {
 };
 
 export const useLanguage = create<LanguageStore>((set) => ({
-	language: 'pt',
+	language: 'en',
 	onLanguageChange: (lang) => {
 		set({ language: lang === 'en' ? 'pt' : 'en' });
 	},

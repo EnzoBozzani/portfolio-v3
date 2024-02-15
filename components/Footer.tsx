@@ -8,7 +8,7 @@ export const Footer = () => {
 	const language = useLanguage((state) => state.language);
 
 	return (
-		<footer className='p-6 w-full fixed bottom-0 flex items-center justify-center gap-x-8 backdrop-blur'>
+		<footer className='mt-12 p-6 w-full flex items-center justify-center gap-x-8 backdrop-blur border-t border-t-white/20'>
 			<a
 				href='https://github.com/EnzoBozzani'
 				target='_blank'
@@ -25,7 +25,7 @@ export const Footer = () => {
 			</a>
 			<a
 				href='mailto:bozzanienzo@gmail.com'
-				className='absolute bottom-8 mx-auto md:mx-0 md:right-6 text-white font-semibold hover:text-white/80 flex gap-x-2 items-center'
+				className='text-white font-semibold hover:text-white/80 flex gap-x-2 items-center'
 			>
 				<p>{language === 'pt' ? 'Entre em contato' : 'Get in Touch'}</p>
 				<svg

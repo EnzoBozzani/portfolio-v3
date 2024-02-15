@@ -79,7 +79,10 @@ export const MobileSidebar = () => {
 							</Link>
 							<Button
 								variant='custom'
-								onClick={() => onLanguageChange(language)}
+								onClick={() => {
+									onLanguageChange(language);
+									onClose();
+								}}
 							>
 								<p className='mr-2'>{language === 'pt' ? 'EN 🇺🇸' : 'PT 🇧🇷'}</p>
 								<svg
