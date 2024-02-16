@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 		template: 'Enzo Bozzani - %s',
 	},
 	description:
-		'Enzo Bozzani, a software developer (JavaScript, TypeScript, ReactJS, NodeJS), portfolio home page, containing general information. ',
+		'Enzo Bozzani, a software developer (JavaScript, TypeScript, ReactJS, NodeJS), portfolio containing general information.',
 	icons: [
 		{
 			url: 'icon.png',

@@ -8,6 +8,10 @@ body,
 	height: 100%;
 }
 
+* {
+	user-select: none;
+}
+
 .highlighted {
 	color: #4ade80;
 	font-weight: 700;
