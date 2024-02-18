@@ -1,7 +1,8 @@
 'use client';
 
-import { useLanguage } from '@/hooks/useLanguage';
 import Image from 'next/image';
+
+import { useLanguage } from '@/hooks/useLanguage';
 
 export const TitleSection = () => {
 	const language = useLanguage((state) => state.language);
