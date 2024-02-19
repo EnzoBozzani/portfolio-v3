@@ -38,7 +38,7 @@ export const CertificatesSection = () => {
 								: "Certificate of Best Placement in FEI's Selection Process"
 						}
 						description={
-							language === 'pt'
+							language === 'en'
 								? "Certificate granted by University Center of FEI for the best placement in FEI's 2022 First Semester Selection Process"
 								: 'Certificado concedido pelo Centro Universitário FEI pela melhor colocação no Processo Seletivo da FEI no Primeiro Semestre de 2022'
 						}
