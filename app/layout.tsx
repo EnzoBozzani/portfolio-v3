@@ -4,8 +4,10 @@ import { Montserrat } from 'next/font/google';
 import { Header } from '@/components/Header';
 import { cn } from '@/lib/utils';
 import { Footer } from '@/components/Footer';
+import { ModalProvider } from '@/components/ModalProvider';
 
 import './globals.css';
+
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['600', '700', '800'] });
 
 export const metadata: Metadata = {
@@ -36,6 +38,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={cn('bg-neutral-900 flex flex-col', montserrat.className)}>
 				<Header />
+				<ModalProvider />
 				{children}
 				<Footer />
 			</body>

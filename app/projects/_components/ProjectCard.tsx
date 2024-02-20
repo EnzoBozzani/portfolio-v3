@@ -99,7 +99,14 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 							/>
 						))}
 					{currentProject.techs &&
-						currentProject.techs.map((tech: string) => <p className='text-green-400'>{tech}</p>)}
+						currentProject.techs.map((tech: string) => (
+							<p
+								key={`${currentProject.title}-${tech}`}
+								className='text-green-400'
+							>
+								{tech}
+							</p>
+						))}
 				</div>
 			</CardHeader>
 			<CardContent className='text-xs text-white/50'>{currentProject[language]}</CardContent>
