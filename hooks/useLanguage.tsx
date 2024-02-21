@@ -1,3 +1,4 @@
+import { toast } from 'sonner';
 import { create } from 'zustand';
 
 type LanguageStore = {
@@ -9,5 +10,6 @@ export const useLanguage = create<LanguageStore>((set) => ({
 	language: 'en',
 	onLanguageChange: (lang) => {
 		set({ language: lang === 'en' ? 'pt' : 'en' });
+		toast.success(lang === 'en' ? 'Linguagem alterada para PT 🇧🇷!' : 'Language changed to EN 🇺🇸!');
 	},
 }));

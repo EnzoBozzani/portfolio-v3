@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Montserrat } from 'next/font/google';
+import { Toaster } from 'sonner';
 
 import { Header } from '@/components/Header';
 import { cn } from '@/lib/utils';
@@ -39,6 +40,7 @@ export default function RootLayout({
 			<body className={cn('bg-neutral-900 flex flex-col', montserrat.className)}>
 				<Header />
 				<ModalProvider />
+				<Toaster />
 				{children}
 				<Footer />
 			</body>

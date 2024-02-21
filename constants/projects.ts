@@ -39,7 +39,7 @@ export const projects: Projects = {
 		pt: 'Construído com Next.js, TypeScript e React, este projeto concentra-se na criação de um sistema de autenticação altamente seguro. Ele oferece suporte ao login e registro tradicionais, assim como integração com serviços externos como Google e GitHub. O sistema prioriza a segurança com Autenticação de Dois Fatores durante o login.',
 		en: 'Built with Next.js, TypeScript, and React, this project focuses on creating a highly secure authentication system. It supports traditional credentials login and registration, as well as integration with external services like Google and GitHub. The system prioritizes security with Two-Factor Authentication during login.',
 		icons: ['next', 'typescript', 'react', 'tailwind'],
-		techs: ['AuthJS'],
+		techs: ['AuthJS', 'Prisma', 'MySQL'],
 		githubUrl: '/auth',
 	},
 	pokemonReview: {

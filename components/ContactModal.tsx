@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { useLanguage } from '@/hooks/useLanguage';
 import { Button } from './ui/button';
 import { ChatBubbleIcon, CopyIcon } from '@radix-ui/react-icons';
+import { toast } from 'sonner';
 
 export const ContactModal = () => {
 	const isOpen = useContactModal((state) => state.isOpen);
@@ -86,7 +87,9 @@ export const ContactModal = () => {
 							className='py-6 px-2'
 							onClick={() => {
 								navigator.clipboard.writeText('bozzanienzo@gmail.com');
-								//toast.success(...)
+								toast.success(
+									language === 'pt' ? 'Email copiado com sucesso!' : 'Email copied successfully!'
+								);
 							}}
 						>
 							<CopyIcon className='w-6 h-6 sm:w-8 sm:h-8' />
@@ -113,7 +116,9 @@ export const ContactModal = () => {
 							className='py-6 px-2'
 							onClick={() => {
 								navigator.clipboard.writeText('5513996440301');
-								//toast.success(...)
+								toast.success(
+									language === 'pt' ? 'Telefone copiado com sucesso!' : 'Phone copied successfully!'
+								);
 							}}
 						>
 							<CopyIcon className='w-6 h-6 sm:w-8 sm:h-8' />
