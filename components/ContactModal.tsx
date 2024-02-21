@@ -58,7 +58,11 @@ export const ContactModal = () => {
 						Email
 					</Button>
 				</div>
-				<p className='w-full text-center text-white/50'>or</p>
+				<div className='flex items-center justify-between'>
+					<div className='border-t border-white w-[45%]' />
+					<p>{language === 'pt' ? 'Ou' : 'Or'}</p>
+					<div className='border-t border-white w-[45%]' />
+				</div>
 				<div className='space-y-6 w-full'>
 					<div className='flex items-center justify-between gap-x-2 sm:gap-x-4'>
 						<svg
@@ -67,7 +71,7 @@ export const ContactModal = () => {
 							viewBox='0 0 24 24'
 							strokeWidth={1.5}
 							stroke='currentColor'
-							className='w-6 h-6 sm:w-8 sm:h-8'
+							className='w-6 h-6 sm:w-8 sm:h-8 text-green-400'
 						>
 							<path
 								strokeLinecap='round'
@@ -80,6 +84,10 @@ export const ContactModal = () => {
 						<Button
 							variant={'custom'}
 							className='py-6 px-2'
+							onClick={() => {
+								navigator.clipboard.writeText('bozzanienzo@gmail.com');
+								//toast.success(...)
+							}}
 						>
 							<CopyIcon className='w-6 h-6 sm:w-8 sm:h-8' />
 						</Button>
@@ -91,7 +99,7 @@ export const ContactModal = () => {
 							viewBox='0 0 24 24'
 							strokeWidth={1.5}
 							stroke='currentColor'
-							className='w-6 h-6 sm:w-8 sm:h-8'
+							className='w-6 h-6 sm:w-8 sm:h-8 text-green-400'
 						>
 							<path
 								strokeLinecap='round'
@@ -103,6 +111,10 @@ export const ContactModal = () => {
 						<Button
 							variant={'custom'}
 							className='py-6 px-2'
+							onClick={() => {
+								navigator.clipboard.writeText('5513996440301');
+								//toast.success(...)
+							}}
 						>
 							<CopyIcon className='w-6 h-6 sm:w-8 sm:h-8' />
 						</Button>
