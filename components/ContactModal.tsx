@@ -1,11 +1,13 @@
 'use client';
 
-import { useContactModal } from '@/hooks/useContactModal';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
-import { useLanguage } from '@/hooks/useLanguage';
-import { Button } from './ui/button';
-import { ChatBubbleIcon, CopyIcon } from '@radix-ui/react-icons';
 import { toast } from 'sonner';
+import { ChatBubbleIcon, CopyIcon } from '@radix-ui/react-icons';
+
+import { useContactModal } from '@/hooks/useContactModal';
+import { useLanguage } from '@/hooks/useLanguage';
+
+import { Button } from './ui/button';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
 
 export const ContactModal = () => {
 	const isOpen = useContactModal((state) => state.isOpen);
