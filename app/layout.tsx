@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Montserrat } from 'next/font/google';
 import { Toaster } from 'sonner';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Header } from '@/components/Header';
 import { cn } from '@/lib/utils';
@@ -38,6 +39,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={cn('bg-neutral-900 flex flex-col', montserrat.className)}>
+				<Analytics />
 				<Header />
 				<ModalProvider />
 				<Toaster />
