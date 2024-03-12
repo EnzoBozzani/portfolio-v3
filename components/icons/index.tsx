@@ -12,9 +12,9 @@ export type AvailableIcons =
 	| 'react'
 	| 'node'
 	| 'postgres'
-	| 'sass'
 	| 'tailwind'
-	| 'typescript';
+	| 'typescript'
+	| 'csharp';
 
 interface IconProps {
 	selectedIcon: AvailableIcons;
@@ -32,7 +32,7 @@ const colors = {
 /**
  * Array to verify if svg view box needs to be 50
  */
-const viewBox50 = ['javascript', 'next', 'postgres', 'sass', 'typescript', 'tailwind'];
+const viewBox50 = ['javascript', 'next', 'postgres', 'typescript', 'tailwind', 'csharp'];
 
 export const TechIcon = ({ color, className, selectedIcon, isAnimated }: IconProps) => {
 	const [currentColor, setCurrentColor] = useState<any>('grey');

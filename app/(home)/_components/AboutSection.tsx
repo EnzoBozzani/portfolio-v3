@@ -33,12 +33,12 @@ export const AboutSection = () => {
 				<p className='text-white text-justify font-medium'>
 					{lang === 'en' ? (
 						<>
-							I've experience and familiarity with <span className='highlighted'>JavaScript</span>,{' '}
+							I've experience and familiarity, mainly, with{' '}
+							<span className='highlighted'>JavaScript</span>,{' '}
 							<span className='highlighted'>TypeScript</span>,{' '}
-							<span className='highlighted'>ReactJS</span> and <span className='highlighted'>NodeJS</span>
-							, but also worked with Python, C and Java. Recently I've also been studying{' '}
-							<span className='highlighted'>WebAPIs development with C# e .NET</span>. For more
-							information on my tech stack, go to{' '}
+							<span className='highlighted'>ReactJS</span>, <span className='highlighted'>NodeJS</span>,{' '}
+							<span className='highlighted'>C#</span> and <span className='highlighted'>.NET</span>, but
+							also worked with Python, C and Java. For more information on my tech stack, go to{' '}
 							<Link
 								href={'/experience'}
 								className='text-green-400 underline'
@@ -49,12 +49,13 @@ export const AboutSection = () => {
 						</>
 					) : (
 						<>
-							Tenho experiência e familiaridade com <span className='highlighted'>JavaScript</span>,{' '}
+							Tenho experiência e familiaridade, principalmente, com{' '}
+							<span className='highlighted'>JavaScript</span>,{' '}
 							<span className='highlighted'>TypeScript</span>,{' '}
-							<span className='highlighted'>ReactJS</span> e <span className='highlighted'>NodeJS</span>,
-							mas também trabalhei com Python, C e Java. Ultimamente também tenho estudado desenvolvimento
-							de <span className='highlighted'>WebAPIs com C# e .NET</span>. Para obter mais informações
-							sobre minha tech stack, acesse{' '}
+							<span className='highlighted'>ReactJS</span>, <span className='highlighted'>NodeJS</span>,{' '}
+							<span className='highlighted'>C#</span> and <span className='highlighted'>.NET</span>, mas
+							também trabalhei com Python, C e Java. Para obter mais informações sobre minha tech stack,
+							acesse{' '}
 							<Link
 								href={'/experience'}
 								className='text-green-400 underline'

@@ -50,6 +50,14 @@ export const projects: Projects = {
 		techs: ['C#', '.NET'],
 		githubUrl: '/pokemon-review',
 	},
+	stockWebAPI: {
+		title: 'Stock Platform WebAPI',
+		pt: 'Desenvolvimento de uma WebAPI utilizando C# e .NET. Essa WebAPI possue todos os endpoints (protegidos usando Identity JWT) necessários numa "rede social de ações", utilizando Entity Framework para trabalhar com o banco de dados PostgreSQL.',
+		en: 'Development of WebAPI using C# and .NET. This WebAPI contains all endpoints (protected using Identity JWT) needed in a "stock social media platform", using Entity Framework to work with the PostgreSQL database.',
+		icons: ['postgres'],
+		techs: ['C#', '.NET'],
+		githubUrl: '/stock-platform-webapi',
+	},
 	obfBackend: {
 		title: 'OneBitFlix - Backend',
 		pt: 'Desenvolvimento de uma WebAPI utilizando NodeJS. Todos os endpoints necessários para o funcionamento do FrontEnd foram desenvolvidos nessa aplicação.',
@@ -62,7 +70,7 @@ export const projects: Projects = {
 		title: 'OneBitFlix - Frontend',
 		pt: 'Desenvolvimento de uma plataforma de cursos online. Usuários, quando autenticados, podem acessar diversos cursos e recursos.',
 		en: 'Online courses platform development. Users, when logged in, can access several courses and features.',
-		icons: ['next', 'react', 'typescript', 'sass'],
+		icons: ['next', 'react', 'typescript'],
 		techs: null,
 		githubUrl: '/onebitflix-frontend',
 	},

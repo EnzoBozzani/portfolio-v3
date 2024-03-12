@@ -11,8 +11,8 @@ export const ExperienceCard = () => {
 		<Card className='w-full sm:w-[580px] bg-neutral-800 text-white mx-auto mt-12 led-effect border-green-400'>
 			<CardHeader className='text-base sm:text-lg px-6 sm:px-12 text-center'>
 				{language === 'pt'
-					? 'Desenvolvedor FrontEnd em CADFEI: Site Institucional de Carreira Docente'
-					: 'FrontEnd Developer at CADFEI: Professor Career Institucional Website'}
+					? 'Desenvolvedor FrontEnd (Iniciação Tecnológica) em CADFEI: Site Institucional de Carreira Docente'
+					: 'FrontEnd Developer (Undergraduate Research) at CADFEI: Professor Career Institucional Website'}
 			</CardHeader>
 			<CardContent className='space-y-4'>
 				<div className='w-full flex items-center justify-center'>

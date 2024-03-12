@@ -20,11 +20,11 @@ export const TitleSection = () => {
 				{language === 'pt' ? (
 					<>
 						Sou um Desenvolvedor <br />
-						JavaScript, TypeScript, ReactJS, NodeJS
+						JavaScript, TypeScript, ReactJS, NodeJS, C#, .NET
 					</>
 				) : (
 					<>
-						I'm a Software Developer <br /> JavaScript, TypeScript, ReactJS, NodeJS
+						I'm a Software Developer <br /> JavaScript, TypeScript, ReactJS, NodeJS, C#, .NET
 					</>
 				)}
 			</p>

@@ -7,13 +7,13 @@ const techIcons: AvailableIcons[] = [
 	'html',
 	'css',
 	'javascript',
-	'sass',
 	'react',
 	'typescript',
 	'node',
 	'postgres',
 	'next',
 	'tailwind',
+	'csharp',
 ];
 
 export const TechStackSection = () => {

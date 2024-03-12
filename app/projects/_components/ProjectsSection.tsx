@@ -4,7 +4,16 @@ import { useLanguage } from '@/hooks/useLanguage';
 
 import { ProjectCard } from './ProjectCard';
 
-const projects = ['ecommFrontend', 'ecommBackend', 'taskify', 'auth', 'pokemonReview', 'obfBackend', 'obfFrontend'];
+const projects = [
+	'ecommFrontend',
+	'ecommBackend',
+	'taskify',
+	'auth',
+	'pokemonReview',
+	'obfBackend',
+	'obfFrontend',
+	'stockWebAPI',
+];
 
 export const ProjectsSection = () => {
 	const language = useLanguage((state) => state.language);
