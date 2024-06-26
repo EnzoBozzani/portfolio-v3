@@ -40,18 +40,33 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 				</div>
 			</CardHeader>
 			<CardContent className='text-xs text-white/50'>{currentProject[language]}</CardContent>
-			<CardFooter>
-				<Button
-					asChild
-					variant={'custom'}
-				>
-					<a
-						href={`https://github.com/EnzoBozzani${currentProject.githubUrl}`}
-						target='_blank'
+			<CardFooter className='flex items-center gap-x-4'>
+				{currentProject.githubUrl && (
+					<Button
+						asChild
+						variant={'custom'}
 					>
-						{language === 'pt' ? 'Ver no GitHub' : 'View on GitHub'}
-					</a>
-				</Button>
+						<a
+							href={`https://github.com/EnzoBozzani${currentProject.githubUrl}`}
+							target='_blank'
+						>
+							{language === 'pt' ? 'Ver no GitHub' : 'View on GitHub'}
+						</a>
+					</Button>
+				)}
+				{currentProject.liveUrl && (
+					<Button
+						asChild
+						variant={'custom'}
+					>
+						<a
+							href={currentProject.liveUrl}
+							target='_blank'
+						>
+							{language === 'pt' ? 'Visitar' : 'Visit'}
+						</a>
+					</Button>
+				)}
 			</CardFooter>
 		</Card>
 	);

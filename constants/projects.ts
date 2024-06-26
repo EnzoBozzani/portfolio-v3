@@ -5,18 +5,29 @@ interface Projects {
 		en: string;
 		icons: string[] | null;
 		techs: string[] | null;
-		githubUrl: string;
+		githubUrl: string | null;
+		liveUrl: string | null;
 	};
 }
 
 export const projects: Projects = {
-	ecommFrontend: {
-		title: 'Ecommerce - Frontend',
-		pt: 'O Frontend da Plataforma de Comércio Eletrônico é uma solução centrada no usuário que abrange todos os recursos essenciais de uma loja online, construída utilizando React, TypeScript, NextJS e Tailwind.',
-		en: 'The Ecommerce Platform Frontend is a user-centric solution that encompasses all essential features of an online store, built using React, TypeScript, NextJS and Tailwind.',
+	finnancia: {
+		title: 'Finnancia',
+		pt: 'Finnancia é um SaaS (Software as a Service) que permite que seus usuários controlem suas finanças de maneira simples, prática e totalmente personálizavel. Por meio do uso de planilhas, categorias, análises e IA, o Finnancia proporciona o gerenciamento financeiro. Utiliza tecnologias como Next.js, React, Prisma, Stripe, Tailwind e PostgreSQL.',
+		en: 'Finnancia is a SaaS (Software as a Service) that allows its users to control their finances in a simple, practical and fully customizable way. Through the use of spreadsheets, categories, analysis and AI, Finnancia provides financial management. It uses technologies such as Next.js, React, Prisma, Stripe, Tailwind and PostgreSQL.',
+		icons: ['next', 'react', 'typescript', 'tailwind', 'postgres'],
+		techs: ['Prisma'],
+		githubUrl: null,
+		liveUrl: 'https://finnancia.tech',
+	},
+	lingo: {
+		title: 'Lingo',
+		pt: 'O Lingo é um clone do Duolingo, construído com Next.js, React, Prisma, Stripe, Tailwind e PostgreSQL. Aprenda novos idiomas de forma divertida e eficaz com um design moderno e recursos avançados. Utiliza Clerk para autenticação dos usuários',
+		en: 'Lingo is a Duolingo clone, built with Next.js, React, Prisma, Stripe, Tailwind, and PostgreSQL. Learn new languages in a fun and effective way with a modern design and advanced features. Uses Clerk for user authentication',
 		icons: ['react', 'typescript', 'next', 'tailwind'],
 		techs: null,
-		githubUrl: '/ecommerce-frontend',
+		githubUrl: '/duolingo-clone',
+		liveUrl: 'https://lingo-enzobozzani.vercel.app',
 	},
 	ecommBackend: {
 		title: 'Ecommerce - Backend',
@@ -25,14 +36,16 @@ export const projects: Projects = {
 		icons: ['node', 'typescript', 'postgres'],
 		techs: ['Sequelize', 'ExpressJS'],
 		githubUrl: '/ecommerce-backend',
+		liveUrl: null,
 	},
 	taskify: {
 		title: 'Taskify',
-		pt: 'Taskify é um clone completo do Trello de pilha completa, impulsionado pelo Next.js 14, React, Prisma, Stripe, Tailwind e MySQL. Simplifique a gestão de projetos com uma interface intuitiva e recursos robustos.',
+		pt: 'Taskify é um clone completo do Trello, impulsionado pelo Next.js 14, React, Prisma, Stripe, Tailwind e MySQL. Simplifique a gestão de projetos com uma interface intuitiva e recursos robustos.',
 		en: 'Taskify is a fullstack Trello clone, powered by Next.js 14, React, Prisma, Stripe, Tailwind, and MySQL. Streamline project management with an intuitive interface and robust features.',
 		icons: ['next', 'react', 'typescript', 'tailwind'],
 		techs: ['Prisma', 'MySQL'],
 		githubUrl: '/taskify-trello-clone',
+		liveUrl: 'https://taskify-enzobozzani.vercel.app',
 	},
 	auth: {
 		title: 'Auth',
@@ -41,14 +54,7 @@ export const projects: Projects = {
 		icons: ['next', 'typescript', 'react', 'tailwind'],
 		techs: ['AuthJS', 'Prisma', 'MySQL'],
 		githubUrl: '/auth',
-	},
-	pokemonReview: {
-		title: 'Pokemon Review',
-		pt: 'Criação de uma WebAPI utilizando .NET e C#. É minha primeira WebAPI desenvolvida utilizando tais tecnologias, as quais estou estudando atualmente',
-		en: 'Creation of a WebAPI using .NET and C#. This is my first WebAPI developed using these technologies, which I am currently studying.',
-		icons: ['postgres'],
-		techs: ['C#', '.NET'],
-		githubUrl: '/pokemon-review',
+		liveUrl: null,
 	},
 	stockWebAPI: {
 		title: 'Stock Platform WebAPI',
@@ -57,6 +63,7 @@ export const projects: Projects = {
 		icons: ['postgres'],
 		techs: ['C#', '.NET'],
 		githubUrl: '/stock-platform-webapi',
+		liveUrl: null,
 	},
 	obfBackend: {
 		title: 'OneBitFlix - Backend',
@@ -65,6 +72,7 @@ export const projects: Projects = {
 		icons: ['node', 'typescript', 'postgres'],
 		techs: ['Sequelize', 'ExpressJS', 'AdminJS'],
 		githubUrl: '/onebitflix-backend',
+		liveUrl: null,
 	},
 	obfFrontend: {
 		title: 'OneBitFlix - Frontend',
@@ -73,5 +81,6 @@ export const projects: Projects = {
 		icons: ['next', 'react', 'typescript'],
 		techs: null,
 		githubUrl: '/onebitflix-frontend',
+		liveUrl: null,
 	},
 };
