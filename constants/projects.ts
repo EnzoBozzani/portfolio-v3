@@ -17,7 +17,7 @@ export const projects: Projects = {
 		en: 'Finnancia is a SaaS (Software as a Service) that allows its users to control their finances in a simple, practical and fully customizable way. Through the use of spreadsheets, categories, analysis and AI, Finnancia provides financial management. It uses technologies such as Next.js, React, Prisma, Stripe, Tailwind and PostgreSQL.',
 		icons: ['next', 'react', 'typescript', 'tailwind', 'postgres'],
 		techs: ['Prisma'],
-		githubUrl: null,
+		githubUrl: '/finnancia',
 		liveUrl: 'https://finnancia.tech',
 	},
 	lingo: {
@@ -27,7 +27,7 @@ export const projects: Projects = {
 		icons: ['react', 'typescript', 'next', 'tailwind'],
 		techs: null,
 		githubUrl: '/duolingo-clone',
-		liveUrl: null,
+		liveUrl: 'https://lingo-enzobozzani.vercel.app/',
 	},
 	ecommBackend: {
 		title: 'Ecommerce - Backend',
