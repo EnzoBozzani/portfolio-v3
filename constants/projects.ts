@@ -27,7 +27,7 @@ export const projects: Projects = {
 		icons: ['react', 'typescript', 'next', 'tailwind'],
 		techs: null,
 		githubUrl: '/duolingo-clone',
-		liveUrl: 'https://lingo-enzobozzani.vercel.app',
+		liveUrl: null,
 	},
 	ecommBackend: {
 		title: 'Ecommerce - Backend',
