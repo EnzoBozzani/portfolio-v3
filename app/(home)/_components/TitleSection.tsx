@@ -24,7 +24,7 @@ export const TitleSection = () => {
 					</>
 				) : (
 					<>
-						I'm a Software Developer <br /> JavaScript, TypeScript, ReactJS, NodeJS, C#, .NET
+						I&apos;m a Software Developer <br /> JavaScript, TypeScript, ReactJS, NodeJS, C#, .NET
 					</>
 				)}
 			</p>
