@@ -3,18 +3,7 @@
 import { AvailableIcons, TechIcon } from '@/components/icons';
 import { useLanguage } from '@/hooks/useLanguage';
 
-const techIcons: AvailableIcons[] = [
-	'html',
-	'css',
-	'javascript',
-	'react',
-	'typescript',
-	'node',
-	'postgres',
-	'next',
-	'tailwind',
-	'csharp',
-];
+const techIcons: AvailableIcons[] = ['python', 'javascript', 'react', 'typescript', 'node', 'next', 'csharp'];
 
 export const TechStackSection = () => {
 	const language = useLanguage((state) => state.language);
@@ -38,26 +27,27 @@ export const TechStackSection = () => {
 			<p className='text-justify mt-8'>
 				{language === 'en' ? (
 					<>
-						As a developer, my tech stack is a well-rounded combination of web development technologies. I
-						have hands-on experience with front-end technologies such as{' '}
+						As a developer, my tech stack is a well-rounded combination of software development
+						technologies. I have hands-on experience with front-end technologies such as{' '}
 						<span className='highlighted'>HTML</span>, <span className='highlighted'>CSS</span>,{' '}
 						<span className='highlighted'>SASS</span>, <span className='highlighted'>BootStrap</span>, and{' '}
 						<span className='highlighted'>Tailwind</span>, allowing me to craft visually appealing and
-						responsive user interfaces. In the realm of <span className='highlighted'>JavaScript</span>, I'm
-						proficient with both <span className='highlighted'>vanilla JavaScript</span> and{' '}
-						<span className='highlighted'>TypeScript</span>, and I specialize in building interactive web
-						applications using the <span className='highlighted'>React</span> library. For version control,
-						I'm used to work with <span className='highlighted'>Git & GitHub</span>. On the back end, I'm
-						well-versed in <span className='highlighted'>NodeJS</span> and have worked with both NoSQL
-						databases like <span className='highlighted'>MongoDB</span> and relational databases{' '}
-						<span className='highlighted'>(MySQL and PostgreSQL)</span> using NodeJS, providing me with a
-						full-stack development capability. I've also been studying{' '}
-						<span className='highlighted'>WebAPIs development with C# and .NET</span>.
+						responsive user interfaces. In the realm of <span className='highlighted'>JavaScript</span>,
+						I&apos;m proficient with both <span className='highlighted'>vanilla JavaScript</span> and{' '}
+						<span className='highlighted'>TypeScript</span>, and I specialize in building web applications
+						using the <span className='highlighted'>React</span> and{' '}
+						<span className='highlighted'>NextJS</span>. On the back end, I&apos;m well-versed in{' '}
+						<span className='highlighted'>NodeJS</span> and <span className='highlighted'>Python</span> and
+						have worked with both NoSQL databases like <span className='highlighted'>MongoDB</span> and
+						relational databases <span className='highlighted'>(MySQL and PostgreSQL)</span>, providing me
+						with a full-stack development capability. I&apos;ve also worked/work with{' '}
+						<span className='highlighted'>LLMs and Machine Learning in general </span> for diverse
+						applications using Python with PyTorch, HuggingFace libraries, among others.
 					</>
 				) : (
 					<>
 						Como desenvolvedor, minha tech stack é uma combinação abrangente de tecnologias de
-						desenvolvimento web. Tenho experiência prática com tecnologias front-end como{' '}
+						desenvolvimento de software. Tenho experiência prática com tecnologias front-end como{' '}
 						<span className='highlighted'>HTML</span>, <span className='highlighted'>CSS</span>,{' '}
 						<span className='highlighted'>SASS</span>, <span className='highlighted'>BootStrap</span> e{' '}
 						<span className='highlighted'>Tailwind</span>, permitindo-me criar interfaces de usuário
@@ -65,14 +55,15 @@ export const TechStackSection = () => {
 						<span className='highlighted'>JavaScript</span>, sou proficiente tanto em{' '}
 						<span className='highlighted'>JavaScript puro</span> quanto em{' '}
 						<span className='highlighted'>TypeScript</span>, e especializo-me na construção de aplicações
-						web interativas usando a biblioteca <span className='highlighted'>React</span>. Quanto ao
-						controle de versão, estou acostumado a trabalhar com{' '}
-						<span className='highlighted'>Git & GitHub</span>. No back end, tenho proficiência em{' '}
-						<span className='highlighted'>NodeJS</span> e trabalhei tanto com bancos de dados NoSQL como{' '}
-						<span className='highlighted'>MongoDB</span> quanto com bancos de dados relacionais{' '}
-						<span className='highlighted'>(MySQL and PostgreSQL)</span> usando NodeJS, proporcionando-me uma
-						capacidade de desenvolvimento full-stack. Também venho estudando{' '}
-						<span className='highlighted'>desenvolvimento de WebAPIs com C# e .NET</span>.
+						web usando a biblioteca <span className='highlighted'>React</span>, além de{' '}
+						<span className='highlighted'>NextJS</span>. No back end, tenho proficiência em{' '}
+						<span className='highlighted'>NodeJS</span> e <span className='highlighted'>Python</span> e
+						trabalhei tanto com bancos de dados NoSQL como <span className='highlighted'>MongoDB</span>{' '}
+						quanto com bancos de dados relacionais{' '}
+						<span className='highlighted'>(MySQL and PostgreSQL)</span>, proporcionando-me uma capacidade de
+						desenvolvimento full-stack. Também trabalhei/trabalho com{' '}
+						<span className='highlighted'>LLMs e Machine Learning em geral </span> com aplicações diversas
+						usando Python com PyTorch, bibliotecas do HuggingFace, entre outros.
 					</>
 				)}
 			</p>
