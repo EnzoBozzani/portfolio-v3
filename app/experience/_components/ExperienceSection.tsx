@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/hooks/useLanguage';
+import { experiences } from '@/constants/experiences';
 import { ExperienceCard } from './ExperienceCard';
 
 export const ExperienceSection = () => {
@@ -11,7 +12,12 @@ export const ExperienceSection = () => {
 			<h1 className='font-semibold text-3xl md:text-5xl text-center'>
 				{language === 'pt' ? 'Experiência' : 'Experience'}
 			</h1>
-			<ExperienceCard />
+			{Object.keys(experiences).map((experience) => (
+				<ExperienceCard
+					key={experience}
+					experience={experience}
+				/>
+			))}
 			<p className='text-justify mt-12'>
 				{language === 'en' ? (
 					<>
@@ -21,7 +27,7 @@ export const ExperienceSection = () => {
 						enthusiasm only grew as I delved deeper into the world of programming. Every challenge I
 						overcame increased my certainty that I was on the right path.{' '}
 						<span className='highlighted'>
-							Software development wasn't just a career I was pursuing, it was my passion.
+							Software development wasn&apos;t just a career I was pursuing, it was my passion.
 						</span>
 					</>
 				) : (
@@ -42,7 +48,7 @@ export const ExperienceSection = () => {
 			<p className='text-justify'>
 				{language === 'en' ? (
 					<>
-						Over time, I looked for courses to increase my knowledge, that's why I started studying
+						Over time, I looked for courses to increase my knowledge, that&apos;s why I started studying
 						development with JavaScript, which led me to TypeScript, ReactJS and NodeJS. In fact,{' '}
 						<span className='highlighted'>
 							this portfolio was developed using ReactJS, TypeScript, Tailwind and NextJS
