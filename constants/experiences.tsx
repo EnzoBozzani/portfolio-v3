@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { ReactNode } from 'react';
+import Image from 'next/image';
 import { SiIbm } from 'react-icons/si';
 
 interface Experiences {
@@ -29,7 +29,7 @@ export const experiences: Experiences = {
 			en: 'August/2024 - Now',
 		},
 		icons: ['python', 'typescript', 'react', 'next'],
-		logo: <SiIbm className='w-16 h-16 shrink-0' />,
+		logo: <SiIbm className='w-full h-auto shrink-0' />,
 	},
 	cadfei: {
 		title: {

@@ -14,7 +14,7 @@ export const ExperienceRow = ({ experience }: { experience: string }) => {
 		<div
 			className={cn('w-full text-white flex gap-x-6 p-4', !experienceData.last && 'border-b border-neutral-700')}
 		>
-			<div className='shrink-0'>{experienceData.logo}</div>
+			<div className='shrink-0 w-16'>{experienceData.logo}</div>
 			<div className='space-y-3'>
 				<h6 className='text-sm sm:text-base'>
 					{language === 'pt' ? experienceData.title.pt : experienceData.title.en}
