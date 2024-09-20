@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { FaPython } from 'react-icons/fa';
 
 import { icons } from '@/constants/icons';
+import { cn } from '@/lib/utils';
 
 export type AvailableIcons =
 	| 'html'
@@ -14,7 +16,8 @@ export type AvailableIcons =
 	| 'postgres'
 	| 'tailwind'
 	| 'typescript'
-	| 'csharp';
+	| 'csharp'
+	| 'python';
 
 interface IconProps {
 	selectedIcon: AvailableIcons;
@@ -35,7 +38,26 @@ const colors = {
 const viewBox50 = ['javascript', 'next', 'postgres', 'typescript', 'tailwind', 'csharp'];
 
 export const TechIcon = ({ color, className, selectedIcon, isAnimated }: IconProps) => {
-	const [currentColor, setCurrentColor] = useState<any>('grey');
+	const [currentColor, setCurrentColor] = useState<'white' | 'green' | 'grey'>(color);
+
+	if (selectedIcon == 'python') {
+		if (isAnimated) {
+			return (
+				<FaPython
+					color={colors[currentColor]}
+					className={cn(className, 'hover:-translate-y-6 transition duration-500')}
+					onMouseEnter={() => setCurrentColor('green')}
+					onMouseLeave={() => setCurrentColor('grey')}
+				/>
+			);
+		}
+		return (
+			<FaPython
+				color={colors[currentColor]}
+				className={cn(className)}
+			/>
+		);
+	}
 
 	if (isAnimated) {
 		return (
@@ -47,7 +69,9 @@ export const TechIcon = ({ color, className, selectedIcon, isAnimated }: IconPro
 					}`}
 					fill={currentColor}
 					className='w-full h-auto hover:-translate-y-6 transition duration-500'
+					// @ts-ignore
 					onMouseEnter={() => setCurrentColor(colors['green'])}
+					// @ts-ignore
 					onMouseLeave={() => setCurrentColor(colors['grey'])}
 				>
 					{icons[selectedIcon]}

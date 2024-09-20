@@ -14,18 +14,20 @@ export const AboutSection = () => {
 				<p className='text-white text-justify font-medium'>
 					{lang === 'en' ? (
 						<>
-							Hello, my name is <span className='highlighted'>Enzo Bozzani</span>, I'm 20 years old, and
-							I'm passionate about technology, specially software development. Currently, I'm studying{' '}
-							<span className='highlighted'>Computer Science</span> at Centro Universitário FEI. I'm from
-							Santos (Brazil), so my native language is portuguese, but I also speak english.
+							Hello, my name is <span className='highlighted'>Enzo Bozzani</span>, I&apos;m 20 years old,
+							and I&apos;m passionate about technology, specially software development. Currently,
+							I&apos;m working as a software developer intern at <span className='highlighted'>IBM</span>{' '}
+							and studying <span className='highlighted'>Computer Science</span> at Centro Universitário
+							FEI. I&apos;m from Brazil, so my native language is portuguese, but I also speak english.
 						</>
 					) : (
 						<>
 							Olá, meu nome é <span className='highlighted'>Enzo Bozzani</span>, tenho 20 anos e sou
 							apaixonado por tecnologia, especialmente desenvolvimento de software. Atualmente, estou
-							cursando <span className='highlighted'>Ciência da Computação</span> no Centro Universitário
-							FEI. Sou de Santos (Brasil), então minha língua nativa é o português, mas também falo
-							inglês.
+							trabalhando como estagiário em desenvolvimento de software na{' '}
+							<span className='highlighted'>IBM</span> e cursando{' '}
+							<span className='highlighted'>Ciência da Computação</span> no Centro Universitário FEI. Sou
+							do Brasil, então minha língua nativa é o português, mas também falo inglês.
 						</>
 					)}
 				</p>
@@ -33,12 +35,11 @@ export const AboutSection = () => {
 				<p className='text-white text-justify font-medium'>
 					{lang === 'en' ? (
 						<>
-							I've experience and familiarity, mainly, with{' '}
-							<span className='highlighted'>JavaScript</span>,{' '}
-							<span className='highlighted'>TypeScript</span>,{' '}
-							<span className='highlighted'>ReactJS</span>, <span className='highlighted'>NodeJS</span>,{' '}
-							<span className='highlighted'>C#</span> and <span className='highlighted'>.NET</span>, but
-							also worked with Python, C and Java. For more information on my tech stack, go to{' '}
+							I&apos;ve experience and familiarity, mainly, with{' '}
+							<span className='highlighted'>Python</span>, <span className='highlighted'>JavaScript</span>
+							, <span className='highlighted'>TypeScript</span>,{' '}
+							<span className='highlighted'>ReactJS</span> and <span className='highlighted'>NodeJS</span>
+							. For more information on my tech stack, go to{' '}
 							<Link
 								href={'/experience'}
 								className='text-green-400 underline'
@@ -50,12 +51,10 @@ export const AboutSection = () => {
 					) : (
 						<>
 							Tenho experiência e familiaridade, principalmente, com{' '}
-							<span className='highlighted'>JavaScript</span>,{' '}
-							<span className='highlighted'>TypeScript</span>,{' '}
-							<span className='highlighted'>ReactJS</span>, <span className='highlighted'>NodeJS</span>,{' '}
-							<span className='highlighted'>C#</span> and <span className='highlighted'>.NET</span>, mas
-							também trabalhei com Python, C e Java. Para obter mais informações sobre minha tech stack,
-							acesse{' '}
+							<span className='highlighted'>Python</span>, <span className='highlighted'>JavaScript</span>
+							, <span className='highlighted'>TypeScript</span>,{' '}
+							<span className='highlighted'>ReactJS</span> e <span className='highlighted'>NodeJS</span>.
+							Para obter mais informações sobre minha tech stack, acesse{' '}
 							<Link
 								href={'/experience'}
 								className='text-green-400 underline'

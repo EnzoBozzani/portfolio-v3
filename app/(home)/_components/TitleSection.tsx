@@ -7,6 +7,8 @@ import { useLanguage } from '@/hooks/useLanguage';
 export const TitleSection = () => {
 	const language = useLanguage((state) => state.language);
 
+	const stack = 'Python, JavaScript, TypeScript, ReactJS, NodeJS';
+
 	return (
 		<>
 			<Image
@@ -20,11 +22,11 @@ export const TitleSection = () => {
 				{language === 'pt' ? (
 					<>
 						Sou um Desenvolvedor <br />
-						JavaScript, TypeScript, ReactJS, NodeJS, C#, .NET
+						{stack}
 					</>
 				) : (
 					<>
-						I'm a Software Developer <br /> JavaScript, TypeScript, ReactJS, NodeJS, C#, .NET
+						I&apos;m a Software Developer <br /> {stack}
 					</>
 				)}
 			</p>
