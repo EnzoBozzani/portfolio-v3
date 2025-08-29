@@ -19,7 +19,7 @@ export const Footer = () => {
 				<GitHubLogoIcon className='w-12 h-12' />
 			</a>
 			<a
-				href='https://www.linkedin.com/in/enzo-bozzani-812a7322a/'
+				href='https://www.linkedin.com/in/enzobozzani'
 				target='_blank'
 				className='hover:text-white text-white/30 hidden md:block'
 			>

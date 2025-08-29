@@ -9,7 +9,12 @@ export const ResumeSection = () => {
 	return (
 		<section className='px-4 mx-auto max-w-screen-sm w-full mt-12 text-white'>
 			<hr />
-			<h1 className='text-3xl sm:text-5xl text-center mt-6'>{language === 'pt' ? 'Currículo' : 'Resume'}</h1>
+			<h1
+				id='resume'
+				className='text-3xl sm:text-5xl text-center mt-6'
+			>
+				{language === 'pt' ? 'Currículo' : 'Resume'}
+			</h1>
 			<div className='py-6 flex items-center justify-center flex-wrap gap-6 mt-6'>
 				<Button
 					variant={'custom'}

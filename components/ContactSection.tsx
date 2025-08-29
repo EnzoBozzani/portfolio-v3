@@ -9,8 +9,13 @@ export const ContactSection = () => {
 	const language = useLanguage((state) => state.language);
 
 	return (
-		<section className='px-4 mx-auto max-w-screen-sm w-full mt-24 text-white'>
-			<h1 className='text-3xl sm:text-5xl text-center'>{language === 'pt' ? 'Contato' : 'Contact'}</h1>
+		<section className='px-4 mx-auto max-w-screen-sm w-full mt-12 text-white'>
+			<h1
+				className='text-3xl sm:text-5xl text-center'
+				id='contact'
+			>
+				{language === 'pt' ? 'Contato' : 'Contact'}
+			</h1>
 			<div className='py-6 flex items-center justify-center flex-wrap gap-6 mt-6'>
 				<Button
 					variant={'custom'}

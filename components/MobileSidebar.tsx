@@ -48,34 +48,43 @@ export const MobileSidebar = () => {
 					side='left'
 					className='p-2 pt-10 bg-gradient-to-b from-neutral-900 to-neutral-800 border-none text-white'
 				>
-					<div className='flex flex-col items-center justify-between gap-y-20'>
+					<div className='flex flex-col items-center justify-between gap-y-12'>
 						<div>
 							<Link
 								className='flex items-center group'
-								href='/'
+								href='#top'
 							>
 								<CodeIcon className='h-8 w-8 md:w-12 md:h-12 text-green-500 mr-2' />
-								<p className='group-hover:text-white/70 text-lg md:text-2xl text-white'>Enzo Bozzani</p>
 							</Link>
 						</div>
 						<div className='flex flex-col gap-y-12 ml-4'>
 							<Link
+								href='#experience'
 								className='text-center border-b border-b-green-500 pb-2 hover:text-white/80'
-								href={'/experience'}
+								onClick={() => onClose()}
 							>
 								{language === 'pt' ? 'Experiência' : 'Experience'}
 							</Link>
 							<Link
+								href='#skills'
 								className='text-center border-b border-b-green-500 pb-2 hover:text-white/80'
-								href={'/projects'}
+								onClick={() => onClose()}
 							>
-								{language === 'pt' ? 'Projetos' : 'Projects'}
+								{language === 'pt' ? 'Habilidades' : 'Skills'}
 							</Link>
 							<Link
+								href='#contact'
 								className='text-center border-b border-b-green-500 pb-2 hover:text-white/80'
-								href={'/contact'}
+								onClick={() => onClose()}
 							>
 								{language === 'pt' ? 'Contato' : 'Contact'}
+							</Link>
+							<Link
+								href='#resume'
+								className='text-center border-b border-b-green-500 pb-2 hover:text-white/80'
+								onClick={() => onClose()}
+							>
+								{language === 'pt' ? 'Currículo' : 'Resume'}
 							</Link>
 							<Button
 								variant='custom'
@@ -110,7 +119,7 @@ export const MobileSidebar = () => {
 								<GitHubLogoIcon className='w-10 h-10' />
 							</a>
 							<a
-								href='https://www.linkedin.com/in/enzo-bozzani-812a7322a/'
+								href='https://www.linkedin.com/in/enzobozzani'
 								target='_blank'
 								className='hover:text-white text-white/30'
 							>

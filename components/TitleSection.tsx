@@ -11,6 +11,7 @@ export const TitleSection = () => {
 
 	return (
 		<>
+			<div id='#top'></div>
 			<Image
 				className='w-[220px] md:w-[320px] h-auto mt-32 z-30 mx-auto rounded-full pulseAnimation'
 				alt='profile picture'
@@ -19,16 +20,8 @@ export const TitleSection = () => {
 				src={'/profile.jpg'}
 			/>
 			<p className='mt-12 mx-auto text-center text-xl sm:text-2xl md:text-4xl text-white font-black'>
-				{language === 'pt' ? (
-					<>
-						Sou um Desenvolvedor <br />
-						{stack}
-					</>
-				) : (
-					<>
-						I&apos;m a Software Developer <br /> {stack}
-					</>
-				)}
+				Software Engineer <br />
+				{stack}
 			</p>
 		</>
 	);
